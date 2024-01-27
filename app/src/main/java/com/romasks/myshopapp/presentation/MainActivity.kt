@@ -8,6 +8,7 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.romasks.core.activity.viewBinding
+import com.romasks.myshopapp.MyShopApp
 import com.romasks.myshopapp.R
 import com.romasks.myshopapp.databinding.ActivityMainBinding
 
@@ -16,6 +17,8 @@ class MainActivity : AppCompatActivity() {
     private val binding by viewBinding(ActivityMainBinding::inflate)
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        (applicationContext as MyShopApp).appComponent.inject(this)
+
         super.onCreate(savedInstanceState)
 
         setContentView(binding.root)

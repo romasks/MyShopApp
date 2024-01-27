@@ -4,7 +4,9 @@ import com.romasks.myshopapp.presentation.basket.BasketFragment
 import com.romasks.myshopapp.presentation.profile.ProfileFragment
 import com.romasks.myshopapp.presentation.MainActivity
 import com.romasks.myshopapp.presentation.home.HomeFragment
+import dagger.Component
 
+@Component(modules = [NetworkModule::class])
 interface ApplicationComponent {
 
     fun inject(activity: MainActivity)
