@@ -1,4 +1,4 @@
-package com.romasks.myshopapp.ui.home
+package com.romasks.myshopapp.presentation.home
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
